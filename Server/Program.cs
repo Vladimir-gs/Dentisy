@@ -1,6 +1,14 @@
+using Microsoft.EntityFrameworkCore;
+using Server.Context;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateSlimBuilder(args);
+
+//Configuracion de la conexion a la base de datos
+var ConStr = builder.Configuration.GetConnectionString("ConStr") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+builder.Services.AddDbContext<Context>(options =>
+    options.UseSqlServer(ConStr));
+
 
 builder.Services.ConfigureHttpJsonOptions(options =>
 {
