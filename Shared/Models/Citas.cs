@@ -23,7 +23,7 @@ public partial class Citas
 
     public DateTime? FechaCreacion { get; set; }
 
-    public virtual Usuarios IdDoctorNavigation { get; set; } = null!;
+    public virtual Usuarios? IdDoctorNavigation { get; set; } = null!;
 
-    public virtual Pacientes IdPacienteNavigation { get; set; } = null!;
+    public virtual Pacientes? IdPacienteNavigation { get; set; } = null!;
 }

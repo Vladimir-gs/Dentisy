@@ -15,7 +15,7 @@ public partial class TratamientosPiezas
 
     public string? Observaciones { get; set; }
 
-    public virtual EstadosPiezas IdEstadoPiezaNavigation { get; set; } = null!;
+    public virtual EstadosPiezas? IdEstadoPiezaNavigation { get; set; } = null!;
 
-    public virtual Tratamientos IdTratamientoNavigation { get; set; } = null!;
+    public virtual Tratamientos? IdTratamientoNavigation { get; set; } = null!;
 }

@@ -15,9 +15,9 @@ public partial class Tratamientos
 
     public int? DuracionAproximada { get; set; }
 
-    public virtual ICollection<DetalleFactura> DetalleFactura { get; set; } = new List<DetalleFactura>();
+    public virtual ICollection<DetalleFactura>? DetalleFactura { get; set; } = new List<DetalleFactura>();
 
-    public virtual ICollection<HistorialTratamientos> HistorialTratamientos { get; set; } = new List<HistorialTratamientos>();
+    public virtual ICollection<HistorialTratamientos>? HistorialTratamientos { get; set; } = new List<HistorialTratamientos>();
 
-    public virtual ICollection<TratamientosPiezas> TratamientosPiezas { get; set; } = new List<TratamientosPiezas>();
+    public virtual ICollection<TratamientosPiezas>? TratamientosPiezas { get; set; } = new List<TratamientosPiezas>();
 }

@@ -27,7 +27,7 @@ public partial class Facturas
 
     public string? Comentarios { get; set; }
 
-    public virtual ICollection<DetalleFactura> DetalleFactura { get; set; } = new List<DetalleFactura>();
+    public virtual ICollection<DetalleFactura>? DetalleFactura { get; set; } = new List<DetalleFactura>();
 
-    public virtual Pacientes IdPacienteNavigation { get; set; } = null!;
+    public virtual Pacientes? IdPacienteNavigation { get; set; } = null!;
 }

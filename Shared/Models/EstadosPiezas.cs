@@ -15,9 +15,9 @@ public partial class EstadosPiezas
 
     public string? Observaciones { get; set; }
 
-    public virtual Odontogramas IdOdontogramaNavigation { get; set; } = null!;
+    public virtual Odontogramas? IdOdontogramaNavigation { get; set; } = null!;
 
-    public virtual PiezasDentales IdPiezaNavigation { get; set; } = null!;
+    public virtual PiezasDentales? IdPiezaNavigation { get; set; } = null!;
 
-    public virtual ICollection<TratamientosPiezas> TratamientosPiezas { get; set; } = new List<TratamientosPiezas>();
+    public virtual ICollection<TratamientosPiezas>? TratamientosPiezas { get; set; } = new List<TratamientosPiezas>();
 }

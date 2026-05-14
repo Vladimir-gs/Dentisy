@@ -17,7 +17,7 @@ public partial class DetalleFactura
 
     public decimal Subtotal { get; set; }
 
-    public virtual Facturas IdFacturaNavigation { get; set; } = null!;
+    public virtual Facturas? IdFacturaNavigation { get; set; } = null!;
 
-    public virtual Tratamientos IdTratamientoNavigation { get; set; } = null!;
+    public virtual Tratamientos? IdTratamientoNavigation { get; set; } = null!;
 }

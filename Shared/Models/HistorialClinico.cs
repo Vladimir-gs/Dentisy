@@ -15,9 +15,9 @@ public partial class HistorialClinico
 
     public string? ObservacionesGenerales { get; set; }
 
-    public virtual ICollection<HistorialTratamientos> HistorialTratamientos { get; set; } = new List<HistorialTratamientos>();
+    public virtual ICollection<HistorialTratamientos>? HistorialTratamientos { get; set; } = new List<HistorialTratamientos>();
 
-    public virtual Usuarios IdDoctorNavigation { get; set; } = null!;
+    public virtual Usuarios? IdDoctorNavigation { get; set; } = null!;
 
-    public virtual Pacientes IdPacienteNavigation { get; set; } = null!;
+    public virtual Pacientes? IdPacienteNavigation { get; set; } = null!;
 }

@@ -15,5 +15,5 @@ public partial class ArchivosPacientes
 
     public DateTime? Fecha { get; set; }
 
-    public virtual Pacientes IdPacienteNavigation { get; set; } = null!;
+    public virtual Pacientes? IdPacienteNavigation { get; set; } = null!;
 }

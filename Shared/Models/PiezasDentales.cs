@@ -13,5 +13,5 @@ public partial class PiezasDentales
 
     public string? Tipo { get; set; }
 
-    public virtual ICollection<EstadosPiezas> EstadosPiezas { get; set; } = new List<EstadosPiezas>();
+    public virtual ICollection<EstadosPiezas>? EstadosPiezas { get; set; } = new List<EstadosPiezas>();
 }

@@ -15,7 +15,7 @@ public partial class HistorialTratamientos
 
     public decimal? Precio { get; set; }
 
-    public virtual HistorialClinico IdHistorialNavigation { get; set; } = null!;
+    public virtual HistorialClinico? IdHistorialNavigation { get; set; } = null!;
 
-    public virtual Tratamientos IdTratamientoNavigation { get; set; } = null!;
+    public virtual Tratamientos? IdTratamientoNavigation { get; set; } = null!;
 }

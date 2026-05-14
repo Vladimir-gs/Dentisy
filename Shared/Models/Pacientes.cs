@@ -37,13 +37,13 @@ public partial class Pacientes
 
     public DateTime? FechaRegistro { get; set; }
 
-    public virtual ICollection<ArchivosPacientes> ArchivosPacientes { get; set; } = new List<ArchivosPacientes>();
+    public virtual ICollection<ArchivosPacientes>? ArchivosPacientes { get; set; } = new List<ArchivosPacientes>();
 
-    public virtual ICollection<Citas> Citas { get; set; } = new List<Citas>();
+    public virtual ICollection<Citas>? Citas { get; set; } = new List<Citas>();
 
-    public virtual ICollection<Facturas> Facturas { get; set; } = new List<Facturas>();
+    public virtual ICollection<Facturas>? Facturas { get; set; } = new List<Facturas>();
 
-    public virtual ICollection<HistorialClinico> HistorialClinico { get; set; } = new List<HistorialClinico>();
+    public virtual ICollection<HistorialClinico>? HistorialClinico { get; set; } = new List<HistorialClinico>();
 
-    public virtual ICollection<Odontogramas> Odontogramas { get; set; } = new List<Odontogramas>();
+    public virtual ICollection<Odontogramas>? Odontogramas { get; set; } = new List<Odontogramas>();
 }
