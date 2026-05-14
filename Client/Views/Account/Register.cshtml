@@ -1,0 +1,70 @@
+@model Shared.DTOs.RegisterDTO
+@{
+    ViewData["Title"] = "Registro";
+}
+
+<div class="container mt-5 mb-5">
+    <div class="row justify-content-center">
+        <div class="col-md-7">
+            <div class="card shadow-lg border-0 rounded-lg">
+                <div class="card-header bg-success text-white text-center py-4">
+                    <h3 class="font-weight-light my-1">Crear Cuenta</h3>
+                    <p class="mb-0">Únete a la plataforma Dentisy</p>
+                </div>
+                <div class="card-body p-5">
+                    <form asp-action="Register" method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger small mb-3"></div>
+                        
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3 mb-md-0">
+                                    <input asp-for="Nombre" class="form-control" placeholder="Nombres" required />
+                                    <label asp-for="Nombre">Nombres</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input asp-for="Apellido" class="form-control" placeholder="Apellidos" required />
+                                    <label asp-for="Apellido">Apellidos</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input asp-for="Correo" class="form-control" type="email" placeholder="nombre@ejemplo.com" required />
+                            <label asp-for="Correo">Correo Electrónico</label>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3 mb-md-0">
+                                    <input asp-for="Password" class="form-control" type="password" placeholder="Crear contraseña" required />
+                                    <label asp-for="Password">Contraseña</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input asp-for="Telefono" class="form-control" placeholder="Teléfono" />
+                                    <label asp-for="Telefono">Teléfono (Opcional)</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-grid gap-2 mt-4">
+                            <button class="btn btn-success btn-lg" type="submit">Registrarme</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer text-center py-3 bg-light">
+                    <div class="small">
+                        <a asp-action="Login">¿Ya tienes cuenta? Inicia sesión</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
