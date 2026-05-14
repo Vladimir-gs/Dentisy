@@ -4,11 +4,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.14.36705.20 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server.csproj", "{DC278CD6-244B-487A-A6D2-10B938208549}"
+	ProjectSection(ProjectDependencies) = postProject
+		{00C001D5-7E6F-4F1C-A733-662361C2F8FD} = {00C001D5-7E6F-4F1C-A733-662361C2F8FD}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "..\Client\Client.csproj", "{7B489CD9-1C82-4060-B2D9-46727CA3C9EC}"
 	ProjectSection(ProjectDependencies) = postProject
+		{00C001D5-7E6F-4F1C-A733-662361C2F8FD} = {00C001D5-7E6F-4F1C-A733-662361C2F8FD}
 		{DC278CD6-244B-487A-A6D2-10B938208549} = {DC278CD6-244B-487A-A6D2-10B938208549}
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "..\Shared\Shared.csproj", "{00C001D5-7E6F-4F1C-A733-662361C2F8FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +30,10 @@ Global
 		{7B489CD9-1C82-4060-B2D9-46727CA3C9EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B489CD9-1C82-4060-B2D9-46727CA3C9EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B489CD9-1C82-4060-B2D9-46727CA3C9EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00C001D5-7E6F-4F1C-A733-662361C2F8FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00C001D5-7E6F-4F1C-A733-662361C2F8FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00C001D5-7E6F-4F1C-A733-662361C2F8FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00C001D5-7E6F-4F1C-A733-662361C2F8FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
